@@ -1,0 +1,2 @@
+-I/Users/marios/repos/gnu-efi/inc
+-I/Users/marios/repos/gnu-efi/inc/x86_64

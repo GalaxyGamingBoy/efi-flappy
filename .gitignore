@@ -1,0 +1,9 @@
+ovmf/
+esp/
+*.ovmf
+*.zip
+*.tar.xz
+*.efi
+*.so
+*.o
+zipped/

@@ -1,0 +1,5 @@
+CLR_CC  = \033[32m
+CLR_LD  = \033[35m
+CLR_OBJ = \033[33m
+CLR_CLN = \033[36m
+CLR_RS  = \033[0m
