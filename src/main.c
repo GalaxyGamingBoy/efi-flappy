@@ -192,7 +192,15 @@ EFIAPI
 efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable) {
   InitializeLib(ImageHandle, SystemTable);
 
-  srand(23467958243959623);
+  EFI_TIME Time;
+  EFI_TIME_CAPABILITIES Capabilities;
+
+  uefi_call_wrapper(gRT->GetTime, 2, &Time, &Capabilities);
+
+  srand(((UINT64)Time.Year << 48) | ((UINT64)Time.Month << 40) |
+        ((UINT64)Time.Day << 32) | ((UINT64)Time.Hour << 24) |
+        ((UINT64)Time.Minute << 16) | ((UINT64)Time.Second << 8) |
+        Time.Nanosecond);
 
   // Load protocols
   EFI_STATUS status;
