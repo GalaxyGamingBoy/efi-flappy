@@ -6,7 +6,7 @@ A reimagined version of Flappy Bird adapted to the nature of UEFI with greater a
 To be exact, instead of pipes I changed it to randomly generated blocks on the screen that the bird must avoid.
 If the bird touches the block or goes above/below the screen, the whole system reboots! So, be careful!
 
-The built version containing a bash script to run QEMU with the appropriate arguments can be found [here]()
+The built version containing a bash script to run QEMU with the appropriate arguments can be found in a zip [here](https://github.com/GalaxyGamingBoy/efi-flappy/releases/tag/1.0), by downloading the `flappy.zip` file
 
 ## Quick start guide ( UNIX )
 
